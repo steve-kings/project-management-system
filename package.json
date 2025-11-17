@@ -1,0 +1,17 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "Full-stack project management application",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:all": "npm run install:client && npm run install:server",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": ["project-management", "react", "node", "express", "mongodb"],
+  "author": "kingscreation.co.ke",
+  "license": "MIT"
+}

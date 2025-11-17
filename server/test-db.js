@@ -6,10 +6,7 @@ dotenv.config();
 console.log('Testing MongoDB connection...');
 console.log('Connection string:', process.env.MONGODB_URI.replace(/:[^:@]+@/, ':****@'));
 
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
     console.log('✅ MongoDB Connected Successfully!');
     console.log('Host:', mongoose.connection.host);

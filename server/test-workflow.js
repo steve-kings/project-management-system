@@ -8,10 +8,7 @@ import { sendWorkspaceInvitation } from './utils/emailService.js';
 dotenv.config();
 
 // Connect to MongoDB
-await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+await mongoose.connect(process.env.MONGODB_URI);
 
 console.log('✅ Connected to MongoDB\n');
 

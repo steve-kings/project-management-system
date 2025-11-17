@@ -35,3 +35,7 @@ coverage/
 # Misc
 *.pem
 .cache/
+
+# Deployment guides (keep local only)
+DEPLOYMENT_GUIDE.md
+DEPLOYMENT_CHECKLIST.md
